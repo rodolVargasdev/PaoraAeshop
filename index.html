@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/icons/style.css">
+    <link rel="stylesheet" href="assets/icons/style.css">
     <link rel="stylesheet" href="styles.css">
     <title>FinyAeshop</title>
 </head>
@@ -61,11 +61,11 @@
                     The aesthetic style is base in comes through 
                     the tumblr style, but more vanguard
                 </p>
-                <p>
-                    The aesthetic style is base in comes through 
-                    the tumblr style, but more vanguard
-                </p>
-                <img src="" alt="">
+                <div class="about-img-containers">
+                    <img src="https://img.icons8.com/small/96/000000/vegan-clothing.png"/>
+                    <img src="https://img.icons8.com/small/96/000000/dress-front-view.png"/>    
+                    <img src="https://img.icons8.com/small/96/000000/boots.png"/>
+                </div> 
             </div>
             <div class="main__about-item">
                 <h3>What will you find?</h3>
@@ -73,7 +73,11 @@
                     You'll find all kng of clothes relationed with 
                     ourstyle, the aesthetic style
                 </p>
-                <img src="" alt="">
+                <div class="about-img-containers">
+                    <img src="https://img.icons8.com/small/96/000000/vegan-clothing.png"/>
+                    <img src="https://img.icons8.com/small/96/000000/dress-front-view.png"/>    
+                    <img src="https://img.icons8.com/small/96/000000/boots.png"/>
+                </div> 
             </div>
             <div class="main__about-item">
                 <h3>About overside style</h3>
@@ -81,31 +85,70 @@
                     The aesthetic style is base in comes through 
                     the tumblr style, but more vanguard
                 </p>
-                <img src="" alt="">
+                <div class="about-img-containers">
+                    <img src="https://img.icons8.com/small/96/000000/vegan-clothing.png"/>
+                    <img src="https://img.icons8.com/small/96/000000/dress-front-view.png"/>    
+                    <img src="https://img.icons8.com/small/96/000000/boots.png"/>
+                </div> 
             </div>
         </div>
 
         <!-- Shop section -->
 
-        <div class="main__shop">
-            <div class="shop__item">
-                <div class="shop__item-show">
-                    <span></span>
-                    <h4></h4>
-                </div>
-                <div class="shop__item-hide">
-                    <h3></h3>
-                    <p></p>
-                    <a class="shop-button">
-                        Go to Shop
-                        <span></span>
-                    </a>
-                </div>
+            <div class="main__shop">
+                <div class="main__shop-background"></div>
+                <div class="main__shop-blur"></div>
+                <div class="main__shop-button-left"></div>
+                <div class="main__shop-button-right"></div>
+                <div class="main__shop-container">
+
+                    <div class="shop__item" id="shop__item">
+                        <div class="shop__item-show" id="shop__item-show">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADpklEQVR4nO3cP4yNWRjH8ecgMUaBbYZEFCrVRFhWofQnwei0eg1iKxqS3UKjUGyxpURCIYqZaChoCYKCCgkxFJIZikVhvor3TDJ7cd/znve878P4fZKb4N455znnl/c5771cZiIiIiIiIiIi8qsIfU4GrDaz3Wa23cy2mtkGM1sTH/O1HAwhTHU0/4SZTc7/1sxm4uOFmd0zsztmdj2E8K6L+V0AATgAXAU+Uu95DKp0Havj2HU+xFr3l66hd8Be4E7CogddAZYUrGNJHLOp28CeUnX0BtgITGUseKF/CtZzrmUtN4BNperpDLACOEN1GZdwHljaop4AnC1Uy6dYz8qSe1YMMAE8LbTYhSaBsYx6xuLPlvaU6jD/MVCm3dSZAY4AIwn1jMTXznRc0xSwsY89/t5CS7ebFDPAv8A+YD3VZo/EX++Lz3W98Qt9oNqDFX1vfpt2MwdcB/4EdgDXimxFnmvAH8CJWNNc5jj9tCXatZs54DIwPjDmKHArc8w2bgKjA7WMA5fID6KbtkT7dvMQ2Dlk/OXk3afnmmRI2wC2kff+BUrfLdGu3cwCx4BlCfMspQr5c+ZcKeaobktrb22p3rwdBt5mzvUSOFQigOnMhV4g7/ZxL2kfGTT1DNiVUc9YXEtOW5puOt+3Cmja84e2m8Q5R4G/gfcZix70DviLgX6fUdNO4EHDudt/qEjVFlLMAkdJaDcN5l4DnAKeNFw4wGPgJAU/2AOWxTXOJtZwpsSkEzWTzLebtQXWOKyOceA4cBF4BLwC/ouPV/HPLsbXjNeP2KqW1LbU/tYUWJsQwG8F1vVTAVYlBLCubpzaj3xDCG/M7PWwl5jZ5ga1Lxa/2/C/0JoOIQzbNzNLCCC6V/P81sRxFpO6NdftmZkpgDZ6DeBuzfMK4Gt1e5ZOB/H/Ud0etz6AzRKvAB3EX9liBQ5gs/QWZKZzYKEi/b8R0t8RD1W8sMJKrBE4nTpfkyug3KGy+CXvlQLoxv3UFyYHkHAQSyX5ADZrdgWYdXG4LD6N9kgBlNdpADoH6jXaIwVQXvIBbNbB9wPq7vVDCL1+J6Gpvusv9k/AJY8CcKYAnCkAZwrAmQJwpgCcKQBnCsCZAnCmAJwpAGcKwJkCcKYAnCkAZwrAmQJwpgCcKQBnCsCZAnCmAJwpAGcKwJkCcKYAnCkAZwrAmQJwpgCcFfvfrVL9DN8V7pOuAGcKwJkCcKYAnCkAZwrAmQIQERERERERERHpyRc9t+amjoRCFwAAAABJRU5ErkJggg==">
+                            <h4>SHIRTS</h4>
+                        </div>
+                        <div class="" id="shop__item-hide">
+                            <h3>What will you find?</h3>
+                            <p>
+                                You'll find swetshirts in 
+                                differents types of size with 
+                                the next meas
+                            </p>
+                            <div class="shop-button">
+                                <a href="">Go to shop</a>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop__item " id="shop__item">
+                        <div class="shop__item-show">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADpklEQVR4nO3cP4yNWRjH8ecgMUaBbYZEFCrVRFhWofQnwei0eg1iKxqS3UKjUGyxpURCIYqZaChoCYKCCgkxFJIZikVhvor3TDJ7cd/znve878P4fZKb4N455znnl/c5771cZiIiIiIiIiIi8qsIfU4GrDaz3Wa23cy2mtkGM1sTH/O1HAwhTHU0/4SZTc7/1sxm4uOFmd0zsztmdj2E8K6L+V0AATgAXAU+Uu95DKp0Havj2HU+xFr3l66hd8Be4E7CogddAZYUrGNJHLOp28CeUnX0BtgITGUseKF/CtZzrmUtN4BNperpDLACOEN1GZdwHljaop4AnC1Uy6dYz8qSe1YMMAE8LbTYhSaBsYx6xuLPlvaU6jD/MVCm3dSZAY4AIwn1jMTXznRc0xSwsY89/t5CS7ebFDPAv8A+YD3VZo/EX++Lz3W98Qt9oNqDFX1vfpt2MwdcB/4EdgDXimxFnmvAH8CJWNNc5jj9tCXatZs54DIwPjDmKHArc8w2bgKjA7WMA5fID6KbtkT7dvMQ2Dlk/OXk3afnmmRI2wC2kff+BUrfLdGu3cwCx4BlCfMspQr5c+ZcKeaobktrb22p3rwdBt5mzvUSOFQigOnMhV4g7/ZxL2kfGTT1DNiVUc9YXEtOW5puOt+3Cmja84e2m8Q5R4G/gfcZix70DviLgX6fUdNO4EHDudt/qEjVFlLMAkdJaDcN5l4DnAKeNFw4wGPgJAU/2AOWxTXOJtZwpsSkEzWTzLebtQXWOKyOceA4cBF4BLwC/ouPV/HPLsbXjNeP2KqW1LbU/tYUWJsQwG8F1vVTAVYlBLCubpzaj3xDCG/M7PWwl5jZ5ga1Lxa/2/C/0JoOIQzbNzNLCCC6V/P81sRxFpO6NdftmZkpgDZ6DeBuzfMK4Gt1e5ZOB/H/Ud0etz6AzRKvAB3EX9liBQ5gs/QWZKZzYKEi/b8R0t8RD1W8sMJKrBE4nTpfkyug3KGy+CXvlQLoxv3UFyYHkHAQSyX5ADZrdgWYdXG4LD6N9kgBlNdpADoH6jXaIwVQXvIBbNbB9wPq7vVDCL1+J6Gpvusv9k/AJY8CcKYAnCkAZwrAmQJwpgCcKQBnCsCZAnCmAJwpAGcKwJkCcKYAnCkAZwrAmQJwpgCcKQBnCsCZAnCmAJwpAGcKwJkCcKYAnCkAZwrAmQJwpgCcFfvfrVL9DN8V7pOuAGcKwJkCcKYAnCkAZwrAmQIQERERERERERHpyRc9t+amjoRCFwAAAABJRU5ErkJggg==">
+                            <h4>SHIRTS</h4>
+                        </div>
+                        <div class="" id="shop__item-hide">
+                            <h3>What will you find?</h3>
+                            <p>
+                                You'll find swetshirts in 
+                                differents types of size with 
+                                the next meas
+                            </p>
+                            <div class="shop-button">
+                                <a href="">Go to shop</a>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>    
             </div>
+            
         </div>
     </main>
 
     <footer></footer>
+    <script src="index.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 </body>
 </html>
